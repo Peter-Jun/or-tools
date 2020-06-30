@@ -83,6 +83,12 @@ namespace Google.OrTools.Sat
     {
       throw new NotImplementedException();
     }
+    
+    public IntVar getVariable(int index) 
+   {
+    assert (index == 0);
+    return this;
+   }
 
     public virtual string ShortString()
     {
